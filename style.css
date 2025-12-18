@@ -606,7 +606,7 @@ html.modal-open,body.modal-open {
     padding: 1rem;
   }
   .scroll-cue{
-    padding-top: 6rem;
+    padding-top: 8rem;
     opacity: 0.6;
   }
   .intro-container h1:first-child {
