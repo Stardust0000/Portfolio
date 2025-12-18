@@ -550,3 +550,78 @@ html.modal-open,body.modal-open {
   height: 100%;
   border: none;
 }
+
+/* for smaller screens */
+
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .intro-container {
+    min-height: 85vh;
+    padding: 1rem;
+  }
+
+  .intro-container h1:first-child {
+    font-size: 32px;
+  }
+
+  .intro-container h1:last-of-type {
+    font-size: 40px;
+  }
+
+  .intro-container span {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  section {
+    margin-top: 3rem;
+  }
+
+  .project-card {
+    padding: 1.2rem;
+    gap: 0.8rem;
+  }
+
+  .modal-content {
+    max-width: 95vw;
+    max-height: 90vh;
+    padding: 1rem;
+    overflow-y: auto;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .intro-container {
+    justify-content: flex-start;
+    padding: 1rem;
+  }
+  .scroll-cue{
+    padding-top: 6rem;
+    opacity: 0.6;
+  }
+  .intro-container h1:first-child {
+    font-size: 28px;
+    margin-bottom: 0.3rem;
+  }
+
+  .intro-container h1:last-of-type {
+    font-size: 36px;
+    margin-bottom: 0.6rem;
+  }
+
+  .intro-container span {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+}
