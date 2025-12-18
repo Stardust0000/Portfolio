@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="/style/style.css" rel="stylesheet">
 </head>
+
 <body>
     <div class="stars stars-back"></div>
     <div class="stars stars-front"></div>
-     <main class="content">
+    <main class="content">
         <header class="intro-container">
             <h1>Hi,</h1>
             <h1>I'm Neha</h1>
@@ -27,18 +29,23 @@
         <section class="project-container">
             <h2 class="section-title">Projects</h2>
             <div class="project-grid">
+
                 <!-- Project 1 -->
                 <article class="project-card">
                     <h3>Twilight Trails</h3>
                     <p class="project-desc">
-                        Responsive travel website with immersive UI, multi-page flows, and custom JavaScript interactions.
+                        Responsive travel website with immersive UI, multi-page flows, and custom JavaScript
+                        interactions.
                     </p>
                     <span class="tech">HTML • CSS • JavaScript</span>
                     <div class="project-links">
-                        <a href="#" target="_blank" rel="noopener">Live</a>
-                        <a href="#" target="_blank">Code</a>
+                        <a href="https://stardust0000.github.io/Twilight-Trails/" target="_blank"
+                            rel="noopener">Live</a>
+                        <a href="https://github.com/Stardust0000/Twilight-Trails" target="_blank">Code</a>
+                        <button data-project="twilight-trails" class="preview-btn">Case Study</button>
                     </div>
                 </article>
+
                 <!-- Project 2 -->
                 <article class="project-card">
                     <h3>Daily Quest</h3>
@@ -47,20 +54,25 @@
                     </p>
                     <span class="tech">React • JavaScript • LocalStorage</span>
                     <div class="project-links">
-                        <a href="#" target="_blank" rel="noopener">Live</a>
-                        <a href="#" target="_blank">Code</a>
+                        <a href="https://github.com/Stardust0000/DailyQuest" target="_blank">Code</a>
+                        <button data-project="dailyquest" class="preview-btn">Case Study</button>
+
                     </div>
                 </article>
-                <!-- Project 3 -->
+
+                <!-- Project 4 -->
                 <article class="project-card">
-                    <h3>UX Case Study -Twilight Trails</h3>
+                    <h3>ToonFlix -Mobile UX Concept</h3>
                     <p class="project-desc">
-                    End-to-end UX case study covering research, wireframe, userflows, and final visual low fidelity design.
+                        A mobile-first UI exploration created to understand onboarding flows, content discovery, and
+                        visual hierarchy for entertainment apps.
                     </p>
+                    <small class="tag">Early UX exploration | Mobile-first design</small><br>
                     <span class="tech">Figma • UX Research • Wireframing</span>
                     <div class="project-links">
-                        <a href="#" target="_blank" rel="noopener">Live</a>
-                        <a href="#" target="_blank">Code</a>
+                        <!-- <a href="#" target="_blank" rel="noopener">Live</a> -->
+                        <!-- <a href="#" target="_blank">Code</a> -->
+                        <button data-project="toonflix" class="preview-btn">Case Study</button>
                     </div>
                 </article>
             </div>
@@ -70,6 +82,233 @@
             <a href="https://github.com/Stardust0000">GitHub</a>
             <a href="https://www.linkedin.com/in/neha-navade-613112325">LinkedIn</a>
         </footer>
-     </main>
+    </main>
+
+    <div class="modal hidden" id="preview-modal">
+        <div class="modal-content">
+            <button class="close">X</button>
+            <div class="project-preview" data-project="dailyquest">
+                <h2>Case Study — Daily Quest</h2>
+
+                <ul class="meta">
+                    <li><strong>Role:</strong> Frontend Developer</li>
+                    <li><strong>Type:</strong> React Web Application</li>
+                    <li><strong>Tech:</strong> React • JavaScript • LocalStorage • CSS</li>
+                    <li><strong>Status:</strong> Code Complete</li>
+                </ul>
+
+                <div class="problem">
+                    <h3>Problem</h3>
+                    <p>
+                        Most beginner task apps focus on CRUD functionality but fail to provide
+                        visual motivation or progress awareness, resulting in poor user retention.
+                    </p>
+                </div>
+
+                <div class="goal">
+                    <h3>Goal</h3>
+                    <p>
+                        Build a clean, responsive task-tracking application that:
+                    </p>
+                    <ul>
+                        <li>feels lightweight and engaging</li>
+                        <li>persists data without a backend</li>
+                        <li>uses React state effectively</li>
+                    </ul>
+                </div>
+
+                <div class="solution">
+                    <h3>Solution</h3>
+                    <p>
+                        I built <strong>Daily Quest</strong>, a React-based task manager designed
+                        around progress visibility and simplicity.
+                    </p>
+                    <ul>
+                        <li>Component-driven UI using React hooks</li>
+                        <li>LocalStorage persistence for offline usage</li>
+                        <li>Dynamic progress tracking and state updates</li>
+                    </ul>
+                </div>
+
+                <div class="outcome">
+                    <h3>Outcome</h3>
+                    <ul>
+                        <li>Strengthened understanding of React state and lifecycle</li>
+                        <li>Improved component reusability and UI logic separation</li>
+                        <li>Production-ready structure for future scaling</li>
+                    </ul>
+                </div>
+                <div class="gallery">
+                    <img src="/assets/DailyQuest_mainpage0.png">
+                    <img src="/assets/DailyQuest_mainpage.png">
+                    <img src="/assets/DailyQuest_mainpage3.png">
+                    <img src="/assets/DailyQuest_redirect.png">
+                </div>
+                <div class="link">
+                    <a href="https://github.com/Stardust0000/DailyQuest" target="_blank">Code</a>
+                </div>
+
+            </div>
+
+            <div class="project-preview" data-project="twilight-trails">
+
+                <h2 class="case-title">Case Study — Twilight Trails</h2>
+
+                <ul class="meta">
+                    <li><strong>Role:</strong> Frontend Developer</li>
+                    <li><strong>Type:</strong> Responsive Web Experience</li>
+                    <li><strong>Tech:</strong> HTML • CSS • JavaScript</li>
+                    <li><strong>Status:</strong> Live</li>
+                </ul>
+
+                <section class="case-section">
+                    <h3>Problem</h3>
+                    <p>
+                        Most travel websites overload users with cluttered layouts and generic visuals,
+                        reducing engagement and discoverability—especially on smaller screens.
+                    </p>
+                </section>
+
+                <section class="case-section">
+                    <h3>Goal</h3>
+                    <ul>
+                        <li>Create an atmospheric, premium dark-themed experience</li>
+                        <li>Ensure seamless responsiveness across devices</li>
+                        <li>Use minimal JavaScript for smooth interactions</li>
+                    </ul>
+                </section>
+
+                <section class="case-section">
+                    <h3>Solution</h3>
+                    <p>
+                        I built <strong>Twilight Trails</strong>, a multi-page responsive website focused on
+                        visual storytelling and clarity.
+                    </p>
+                    <ul>
+                        <li>Dark UI with high-contrast typography for readability</li>
+                        <li>Custom JavaScript slideshows instead of third-party libraries</li>
+                        <li>Modular layout for scannable, structured content</li>
+                    </ul>
+                </section>
+
+                <section class="case-section">
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li>Responsive landing and main pages</li>
+                        <li>Custom slideshow & carousel logic (vanilla JS)</li>
+                        <li>Clean navigation with consistent visual hierarchy</li>
+                        <li>GitHub Pages deployment</li>
+                    </ul>
+                </section>
+
+                <section class="case-section">
+                    <h3>Outcome</h3>
+                    <ul>
+                        <li>Translated UI concepts into functional layouts</li>
+                        <li>Wrote clean, reusable JavaScript</li>
+                        <li>Delivered a production-ready static website</li>
+                    </ul>
+                </section>
+
+                <section class="figma-preview">
+                    <h3>Interactive Prototype</h3>
+                    <p class="hint">
+                        Tip: Click through the prototype to explore screens
+                    </p>
+
+                    <div class="figma-embed">
+                        <iframe
+                            src="https://embed.figma.com/proto/o7qnBHUuhl5jgliEfwdlde/Twilight-Trails?node-id=1-2&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1&embed-host=share"
+                            allowfullscreen loading="lazy"></iframe>
+                    </div>
+                </section>
+
+                <div class="case-links">
+                    <a href="https://stardust0000.github.io/Twilight-Trails/" target="_blank" rel="noopener">
+                        Live Site
+                    </a>
+                    <a href="https://github.com/Stardust0000/Twilight-Trails" target="_blank">
+                        Source Code
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="project-preview" data-project="toonflix">
+
+                <h2>Case Study — ToonFlix</h2>
+
+                <ul class="meta">
+                    <li><strong>Role:</strong> UI/UX Designer</li>
+                    <li><strong>Type:</strong> Mobile UX Concept</li>
+                    <li><strong>Tools:</strong> Figma • Wireframing • UX Research</li>
+                    <li><strong>Status:</strong> Concept Design</li>
+                </ul>
+
+                <div class="problem">
+                    <h3>Problem</h3>
+                    <p>
+                        Many entertainment apps overwhelm first-time users with cluttered onboarding
+                        and unclear content discovery paths.
+                    </p>
+                </div>
+
+                <div class="goal">
+                    <h3>Goal</h3>
+                    <p>
+                        Design a mobile-first entertainment app concept that:
+                    </p>
+                    <ul>
+                        <li>simplifies onboarding</li>
+                        <li>prioritizes content discovery</li>
+                        <li>maintains visual hierarchy on small screens</li>
+                    </ul>
+                </div>
+
+                <div class="solution">
+                    <h3>Solution</h3>
+                    <p>
+                        I designed <strong>ToonFlix</strong>, a mobile UX concept focused on clarity
+                        and flow rather than visual excess.
+                    </p>
+                    <ul>
+                        <li>Low-friction onboarding screens</li>
+                        <li>Clear navigation patterns</li>
+                        <li>Consistent spacing and typography</li>
+                    </ul>
+                </div>
+
+                <div class="outcome">
+                    <h3>Outcome</h3>
+                    <ul>
+                        <li>Improved understanding of mobile UX constraints</li>
+                        <li>Hands-on experience with wireframing and flow design</li>
+                        <li>Foundation for future high-fidelity iterations</li>
+                    </ul>
+                </div>
+                <section class="figma-preview">
+                    <h3>Interactive Prototype</h3>
+                    <p class="hint">
+                        Tip: Click through the prototype to explore screens
+                    </p>
+                    <div class="figma-embed">
+                        <iframe
+                            src="https://embed.figma.com/proto/E659aYyEig327vsGilT0Fq/ToonFlix?node-id=1-2&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1&embed-host=share"
+                            allowfullscreen loading="lazy">
+                        </iframe>
+                    </div>
+                </section>
+                <div class="link">
+                    <a href="https://www.figma.com/design/E659aYyEig327vsGilT0Fq/ToonFlix" target="_blank">
+                        Figma
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
